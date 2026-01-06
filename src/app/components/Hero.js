@@ -37,14 +37,14 @@ export default function Hero() {
             <Image src={ProfileImage} alt="Description" className="w-full h-full object-cover bg-cover brightness-75" />
             <div className="absolute items-center justify-center ">
                 <div className="flex items-center justify-center w-full flex-col px-8 z-10">
-                    <h1 className="font-bold text-3xl leading-relaxed text-white">
+                    <h1 className="font-bold text-2xl leading-relaxed text-white">
                         SABUMI FOUNDATION</h1>
                     <p className="text-center leading-relaxed font-medium text-xs text-white">
                         SABUMI FOUNDATION merupakan organisasi non-pemerintah (NGO) yang bergerak di bidang sosial kemanusiaan dan kepedulian lingkungan dengan prinsip keberlanjutan</p>
                 </div>
 
                 <div className="pt-8 w-full items-center justify-center mx-auto flex">
-                    <button className="bg-sky-700 text-sky-100 font-medium py-2 px-4 rounded">
+                    <button className="bg-amber-500 text-sky-100 font-medium py-2 px-4 rounded">
                         Donasi Sekarang
                     </button>
                 </div>
@@ -54,7 +54,7 @@ export default function Hero() {
                         {donationList.map((item) => (
                             <div
                                 key={item.id}
-                                className="h-20 w-28 bg-slate-400 rounded relative overflow-hidden"
+                                className="h-20 w-24 bg-slate-400 rounded relative overflow-hidden"
                             >
                                 <Image src={ProfileImage} alt="Description" className="w-full h-full object-cover bg-cover brightness-50" />
                                 <div className="absolute flex bottom-0 p-2">
