@@ -33,6 +33,12 @@ export default function Home() {
       title: "Warga Sakit Menahun",
       description: "Membutuhkan bantuan biaya pengobatan dan perawatan rutin.",
       image: MasjidImage
+    },
+    {
+      id: 6,
+      title: "Warga Sakit Menahun",
+      description: "Membutuhkan bantuan biaya pengobatan dan perawatan rutin.",
+      image: MasjidImage
     }
   ];
 
@@ -87,20 +93,43 @@ export default function Home() {
 
         <div className="flex justify-between items-center mt-4">
           <h1 className="text-xl font-bold text-slate-800">Mereka yang mebutuhkan</h1>
-          <h1 className="text-xs font-light text-slate-500">Lihat Semua Kategori</h1>
+          <h1 className="text-xs font-light text-slate-500">Lihat Semua</h1>
         </div>
-        <div className="mt-4 flex flex-col gap-4">
+        <div className="mt-4 grid grid-cols-2 gap-4">
           {bantuanList.map((item) => (
-            <div key={item.id} className="relative w-full h-60 bg-slate-500 rounded-2xl overflow-hidden">
-              <Image
-                src={item.image}
-                alt={item.title}
-                className="object-cover bg-cover w-full h-full inset-x-0 brightness-50"
-                loading="eager"
-              />
-              <div className="absolute w-full bottom-0 p-2 bg-slate-950/40">
-                <p className="text-sky-100 leading-relaxed">{item.title}</p>
-                <p className="leading-relaxed text-xs font-light text-sky-100">{item.description}</p>
+            <div key={item.id} className="relative rounded-2xl w-full h-60 overflow-hidden shadow-2xl">
+              <div className="w-full h-6/12">
+                <Image src={item.image} alt="Description" className="w-full h-full object-cover bg-cover" loading="eager" />
+                <div className="absolute top-0 right-0 bg-rose-700 rounded-bl-xl px-2 py-0.5">
+                  <span className="text-xs font-light text-sky-50">Sabumi Fundation</span>
+                </div>
+              </div>
+              <div className="p-2 h-6/12 flex justify-around flex-col">
+                <p className="text-[10px] font-bold leading-relaxed text-slate-800 text-left w-full">
+                  Bantu Guru Honorer = Dukung Pendidikan Indonesia
+                </p>
+                <p className="text-[10px] font-light leading-relaxed text-slate-700 mb-1">
+                  Total Donasi
+                </p>
+                <div className="h-2 bg-gray-200 rounded">
+                  <div
+                    className="h-full bg-indigo-600 rounded flex items-center"
+                    style={{ width: "75%" }}
+                  >
+                  </div>
+                </div>
+                <h3 className="font-bold text-[10px] text-zinc-950">
+                  Rp. 5000.000{" "}
+                  <span className="text-[8px] font-light"> / Rp.10.000.000</span>
+                </h3>
+                <div className="pt-2 flex space-x-1">
+                  <button className="p-1 rounded bg-rose-700 text-rose-50  text-[10px] font-semibold w-8/12">
+                    Beri dukungan
+                  </button>
+                  <button className="p-1 rounded bg-blue-700 text-rose-50  text-[10px] font-semibold w-4/12">
+                    Love
+                  </button>
+                </div>
               </div>
             </div>
           ))}
