@@ -62,9 +62,9 @@ export default function Hero() {
                                 key={item.id}
                                 className="h-32 w-24 bg-slate-400 rounded relative overflow-hidden"
                             >
-                                <Image src={item.image} alt="Description" className="w-full h-full object-cover bg-cover brightness-50" loading="eager" />
-                                <div className="absolute flex text-center bottom-0 p-2">
-                                    <h4 className="text-white font-light text-xs">{item.title}</h4>
+                                <Image src={item.image} alt="Description" className="w-full h-full object-cover bg-cover inset-x-0 " loading="eager" />
+                                <div className=" bottom-0 w-full absolute p-1">
+                                    <div className="text-[10px] font-light text-center leading-relaxed p-2 rounded bg-slate-900/50 text-sky-50">{item.title}</div>
                                 </div>
                             </div>
                         ))}

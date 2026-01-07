@@ -84,8 +84,8 @@ export default function Home() {
         <div className="mt-4 w-full">
           <div className="grid grid-flow-col grid-rows-2 gap-2">
             {menus.map((item) => (
-              <div key={item.id} className="h-12 w-full bg-sky-200 relative rounded-xl p-1 flex items-center justify-center">
-                <h3 className="text-slate-800 font-semibold text-xs">{item.title}</h3>
+              <div key={item.id} className="w-full bg-sky-200 relative rounded-xl p-2 flex items-center justify-center">
+                <h3 className="text-slate-800 font-semibold text-[10px]">{item.title}</h3>
               </div>
             ))}
           </div>
