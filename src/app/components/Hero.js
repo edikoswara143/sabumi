@@ -50,7 +50,7 @@ export default function Hero() {
                 </div>
 
                 <div className="pt-8 w-full items-center justify-center mx-auto flex">
-                    <button className="bg-amber-700 text-sky-100 font-medium py-2 px-4 rounded">
+                    <button className="bg-amber-600 text-sky-100 font-medium py-2 px-4 rounded">
                         Bergabung bersama kami
                     </button>
                 </div>
@@ -63,7 +63,7 @@ export default function Hero() {
                                 className="h-32 w-24 bg-slate-400 rounded relative overflow-hidden"
                             >
                                 <Image src={item.image} alt="Description" className="w-full h-full object-cover bg-cover brightness-50" loading="eager" />
-                                <div className="absolute flex bottom-0 p-2">
+                                <div className="absolute flex text-center bottom-0 p-2">
                                     <h4 className="text-white font-light text-xs">{item.title}</h4>
                                 </div>
                             </div>

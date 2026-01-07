@@ -85,7 +85,7 @@ export default function Home() {
           <div className="grid grid-flow-col grid-rows-2 gap-2">
             {menus.map((item) => (
               <div key={item.id} className="h-12 w-full bg-sky-200 relative rounded-xl p-1 flex items-center justify-center">
-                <h3 className="text-slate-800 font-semibold text-sm">{item.title}</h3>
+                <h3 className="text-slate-800 font-semibold text-xs">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className="mt-4 grid grid-cols-2 gap-4">
           {bantuanList.map((item) => (
-            <div key={item.id} className="relative rounded-2xl w-full h-60 overflow-hidden shadow-2xl">
+            <div key={item.id} className="relative rounded-2xl w-full h-72 overflow-hidden shadow-2xl">
               <div className="w-full h-6/12">
                 <Image src={item.image} alt="Description" className="w-full h-full object-cover bg-cover" loading="eager" />
                 <div className="absolute top-0 right-0 bg-rose-700 rounded-bl-xl px-2 py-0.5">
